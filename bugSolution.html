@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Correctly using innerHTML to append content
+    let existingContent = document.getElementById("myDiv").innerHTML;
+    document.getElementById("myDiv").innerHTML = existingContent + "<p>This text is correctly appended.</p>"; 
+  </script>
+</body>
+</html>
